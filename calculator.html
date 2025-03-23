@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        .table {
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+
+        }
+
+        .table-one {
+            border-style: solid;
+            border-color: black;
+            text-align: right;
+            background-color: gray;
+            border-width: 3px;
+            width: 450px;
+            height: 100px;
+            font-size: 100px;
+
+        }
+
+        .table-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: grey;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .table-three {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: grey;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-four {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: grey;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-five {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(255, 159, 76, 0.996);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-six {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-seven {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-eight {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-nine {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color:  rgba(255, 159, 76, 0.996);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-ten {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-eleven {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-twelve {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-thirteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color:  rgba(255, 159, 76, 0.996);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-fourteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-fifteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-sixteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-seventeen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color:  rgba(255, 159, 76, 0.996);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-eighteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-ninteen {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(128, 128, 128, 0.465);
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .table-twenty {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            height: 80px;
+            width: 80px;
+            background-color: rgba(255, 159, 76, 0.996);
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+
+        <tr>
+            <td class="table-one" colspan="4">0</td>
+        </tr>
+        <tr>
+            <td class="table-two">AC</td>
+            <td class="table-three">+/_</td>
+            <td class="table-four">%</td>
+            <td class="table-five">÷</td>
+        </tr>
+        <tr>
+            <td class="table-six">7</td>
+            <td class="table-seven">8</td>
+            <td class="table-eight">9</td>
+            <td class="table-nine">0</td>
+        </tr>
+        <tr>
+            <td class="table-ten">4</td>
+            <td class="table-eleven">5</td>
+            <td class="table-twelve">6</td>
+            <td class="table-thirteen">-</td>
+        </tr>
+        <tr>
+            <td class="table-fourteen">1</td>
+            <td class="table-fifteen">2</td>
+            <td class="table-sixteen">3</td>
+            <td class="table-seventeen">+</td>
+        </tr>
+        <tr>
+            <td class="table-eighteen" colspan="2">0</td>
+            <td class="table-ninteen">.</td>
+            <td class="table-twenty">=</td>
+        </tr>
+    </table>
+</body>
+
+</html>
