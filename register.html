@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'segoe  UI', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #87CEEB, #836FFF);
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .left-side {
+            width: 50%;
+            padding: 40px;
+            background: #fff;
+        }
+        .right-side {
+            width: 50%;
+            padding: 40px;
+            background: lightblue;
+            color: white;
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #4169E1;
+        }
+        .right-side h2 {
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            outline: none;
+            background: transparent;
+            color: inherit;
+        }
+        .right-side input,
+        .right-side select {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        select {
+            appearance: none;
+            background: url();
+            background-size: 15px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+        .checkbox-group a {
+             color: white;
+             text-decoration: none;
+        }
+        button {
+            padding: 12px 30px;
+            background: white;
+            color: #5D3FD3;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: nold;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-side, .right-side {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>General information</h2>
+            <form id="registrationform">
+               <div class="form-group">
+                <select name="title" required>
+                    <option value="" disabled selected>Title</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+               </div>
+               <div class="form-group row">
+                   <input type="text" placeholder="First name" required>
+                   <input type="text" placeholder="Last name" required>
+               </div>
+               <div class="form-group">
+                <select name="position" required>
+                    <option value="" disabled selected>Position</option>
+                    <option value="manager">Manager</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                </select>
+               </div>
+               <div class="form-group">
+                <input type="text" placeholder="Company" required>
+                <select name="employees" required>
+                    <option value="" disabled selected>Employees</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51">51</option>
+                </select>
+               </div>
+            </form>
+        </div>
+        <div class="right-side">
+            <h2>Contact details</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Street + Nr" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Additional Information">
+            </div>
+            <div class="form-group row">
+                <input type="text" placeholder="Zip code" required>
+                <select name="place" required>
+                    <option value="" disabled selected>Place</option>
+                    <option value="city1">city 1</option>
+                    <option value="city2">city2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select name="country" required>
+                    <option value="" disabled selected>Country</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">canada</option>
+                </select>
+            </div>
+            <div class="form-group row">
+                 <input type="text" placeholder="Code +" required>
+                 <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your email" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I do accept the <a href="#">Terms and Conditions</a></label>
+            </div>
+            <button type="submit">Register Badge</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('Registration form').addEventListener('submit', function(e.preventDefault()); { 
+        // Add your form submission login here
+        console.log('form submitted');
+    });
+    // original: Add form validation 
+    const inputs = document.querySelectorAll('input , select');
+    inputs.forEach(input => {
+        input.addEventListener('invalid', function(e) {
+            e.preventDefault();
+            this.classList.add('Error');
+        });
+        input.addEventListener('input',function() {
+            if(this.classList.contains('error')) {
+                this.classList.remove('error');
+            }
+        });
+    });
+    alert('Welcome to my registration website it is making by Himesh Ganorkar');
+    </script>
+</body>
+</html>
