@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live word counter</title>
+</head>
+<body>
+    <div class="container">
+        <textarea colspan="10" rowspan="10" placeholder="Type here..." oninput="count.innerText='words: '+(this.value.trim()? this.value.trim().split(/\s+/).length: 0)"></textarea>
+        <p id="count">Words: 0</p>
+    </div>
+</body>
+</html>
